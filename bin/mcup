@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+var path = require('path');
+var Config = require('../lib/config');
+var Please = require('../lib/please');
+var Help = require('../lib/helpers');
+var fs = require('fs');
+
+console.log('\n\n\tMeteor Centos 6 UP\n\tSpecialized Meteor Deployment for CentOS 6\n\n'.bold.blue);
+
+var cmd = process.argv[2];
+var current_dir = path.resolve('.');
+
+if (!fs.existsSync(path.resolve(current_dir, 'mcup.json'))) {
+	Help.initJson(current_dir);
+} else {
+	var config = Config.read();
+	var plz = new Please(current_dir, config);
+	if (plz[cmd]) {
+		plz[cmd]();
+	} else {
+		console.error('Invalid argument.'.bold.red);
+		Help.printHelp();
+	}
+}

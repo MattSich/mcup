@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      "mcup",
+      ""
+    ]
+  ],
+  "_from": "mcup@latest",
+  "_id": "mcup@0.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/mcup",
+  "_nodeVersion": "0.10.36",
+  "_npmVersion": "2.5.0",
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_spec": "mcup",
+  "_where": "",
+  "author": {
+    "email": "matt.sich@3pillarglobal.com",
+    "name": "Matt Sich"
+  },
+  "bin": {
+    "mcup": "./bin/mcup"
+  },
+  "dependencies": {
+    "cjson": "0.3.x",
+    "colors": "0.3.x",
+    "jsonfile": "2.0.0",
+    "nodemiral-forcetty": "0.4.x",
+    "prompt": "0.2.x",
+    "prompt-improved": "0.1.x",
+    "underscore": "1.7.0"
+  },
+  "description": "Simple Meteor Deployment for RHEL/CentOS 6+",
+  "devDependencies": {},
+  "directories": {},
+  "keywords": [
+    "mplz",
+    "meteor",
+    "deploy",
+    "centos",
+    "centos6",
+    "rhel",
+    "fedora"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "email": "matt.sich@3pillarglobal.com",
+      "name": "mattsich"
+    }
+  ],
+  "name": "mcup",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {},
+  "version": "0.0.1"
+}

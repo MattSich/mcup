@@ -1,0 +1,29 @@
+{
+  "servers": [
+    {
+      "host": "hostname",
+      "username": "root",
+      "pem": "~/.ssh/id_rsa"
+    }
+  ],
+
+  "setupMongo": true,
+
+  "setupNode": true,
+
+  "nodeVersion": "0.10.36",
+
+  "setupNginx": true,
+
+  "appName": "meteor",
+
+  "appSiteUrl": "http://mydomain.com",
+
+  "app": ".",
+
+  "env": {
+    "ROOT_URL": "http://127.0.0.1"
+  },
+
+  "deployCheckWaitTime": 15
+}
