@@ -4,7 +4,7 @@ Deploy your Meteor app on RHEL flavoured boxes via SSH, and keep your apps alive
 
 ## Installation
 ````
-npm install -g mcup
+npm install https://github.com/MattSich/mcup.git -g
 ````
 
 ## Usage
