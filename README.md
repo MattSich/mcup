@@ -2,13 +2,19 @@
 ### Simple Meteor Deployment for RHEL/CentOS 6+
 Deploy your Meteor app on RHEL flavoured boxes via SSH, and keep your apps alive with forever.js. Your app is served through reverse proxy by __nginx__. Based on [meteor-please](https://github.com/hellstad/meteor-please).
 
+## Prerequisites
+On Mac:
+```
+brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+```
+
 ## Installation
 ````
 npm install https://github.com/MattSich/mcup.git -g
 ````
 
 ## Usage
-##### 1. Initialise
+##### 1. Initialize
 Simply run in your Meteor project's directory:
 ````
 mcup
@@ -37,13 +43,3 @@ __mplz init__ Reconfigures your app's `mcup.json` settings file.
 __mplz setup__ Sets up your server according to your `mcup.json` settings.
 
 __mplz deploy__ Deploys your app according to your `mcup.json` settings.
-
-__mplz reconfig__ Apply any configuration changes if your `mcup.json` has been modified since last setup.
-
-__mplz start__ Starts your app. (systemd)
-
-__mplz stop__ Stops your app. (systemd)
-
-__mplz restart__ Restarts your app. (systemd)
-
-__mplz delete__ Deletes your app from the deployment directory.
