@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo service <%= appName %> stop
+/usr/lib/node_modules/forever/bin/forever stopall
 cd <%= appRemoteTargetPath %>
 
 # unpack bundle / overwrite previous

@@ -3,7 +3,7 @@
 # install nginx
 sudo mkdir -p /etc/nginx
 sudo chmod -R 777 /etc/nginx
-sudo yum install -y nginx --disablerepo=epel
+sudo yum install -y nginx
 sudo mkdir /etc/nginx/sites-enabled
 
 sudo iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT
