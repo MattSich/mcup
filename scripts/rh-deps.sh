@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # install npm dependencies
-cd bundle/programs/server/
-tar -zxvf node_modules.tar.gz
+cd <%= appRemoteTargetPath %>/bundle/programs/server/
+sudo tar -zxvf node_modules.tar.gz
 rm -rf node_modules.tar.gz
 
 export ROOT_URL=<%= appRootUrl %>
