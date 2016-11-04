@@ -2,8 +2,12 @@
 
 # install npm dependencies
 cd <%= appRemoteTargetPath %>/bundle/programs/server/
-sudo tar -zxvf node_modules.tar.gz
+sudo chmod -R 777 .
+tar -zxvf node_modules.tar.gz
 rm -rf node_modules.tar.gz
+
+cd node_modules
+npm build fibers
 
 export ROOT_URL=<%= appRootUrl %>
 export PORT=<%= appPort %>
